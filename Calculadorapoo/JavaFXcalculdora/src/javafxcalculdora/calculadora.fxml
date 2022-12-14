@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="550.0" styleClass="card" stylesheets="@designcal.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxcalculdora.CalculadoraController">
+   <children>
+      <TabPane fx:id="tabpane" layoutY="-1.0" prefHeight="720.0" prefWidth="550.0" styleClass="main" stylesheets="@designcal.css" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tab" text="Bem vindo a calculadora!">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="686.0" prefWidth="544.0">
+                     <children>
+                        <TextField fx:id="telaPadraoTextField" alignment="CENTER_RIGHT" layoutX="51.0" layoutY="38.0" prefHeight="97.0" prefWidth="449.0" styleClass="keyresult" stylesheets="@designcal.css">
+                           <font>
+                              <Font size="20.0" />
+                           </font></TextField>
+                        <Button fx:id="acButton" layoutX="376.0" layoutY="208.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="122.0" stylesheets="@designcal.css" text="AC" />
+                        <Button fx:id="divisaoButton" layoutX="296.0" layoutY="208.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="/" />
+                        <Button fx:id="multiplicacaoButton" layoutX="296.0" layoutY="373.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="X" />
+                        <Button fx:id="noveButton" layoutX="216.0" layoutY="208.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="9" />
+                        <Button fx:id="oitoButton" layoutX="136.0" layoutY="208.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="8" />
+                        <Button fx:id="seteButton" layoutX="56.0" layoutY="208.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="7" />
+                        <Button fx:id="seisButton" layoutX="216.0" layoutY="263.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="6" />
+                        <Button fx:id="subtracaoButton" layoutX="296.0" layoutY="318.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="-" />
+                        <Button fx:id="cincoButton" layoutX="136.0" layoutY="263.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="5" />
+                        <Button fx:id="quatroButton" layoutX="56.0" layoutY="263.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="4" />
+                        <Button fx:id="tresButton" layoutX="216.0" layoutY="318.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="3" />
+                        <Button fx:id="doisButtton" layoutX="136.0" layoutY="318.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="2" />
+                        <Button fx:id="somaButton" layoutX="296.0" layoutY="263.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="+" />
+                        <Button fx:id="umButton" layoutX="56.0" layoutY="318.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="1" />
+                        <Button fx:id="zeroButton" layoutX="56.0" layoutY="373.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="0" />
+                        <Button fx:id="pontoButton" layoutX="136.0" layoutY="373.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="." />
+                        <Button fx:id="igualButton" layoutX="376.0" layoutY="263.0" mnemonicParsing="false" prefHeight="166.0" prefWidth="122.0" stylesheets="@designcal.css" text="=" />
+                        <Button fx:id="porcentagemButton" layoutX="216.0" layoutY="373.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="\%" />
+                        <Button fx:id="quadradaButton" layoutX="443.0" layoutY="428.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="55.0" styleClass="keypad" stylesheets="@../../build/classes/javafxcalculdora/designcal.css" text="√" />
+                        <Button fx:id="elevarButton" layoutX="296.0" layoutY="428.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="x²" />
+                        <Button fx:id="piButton" layoutX="376.0" layoutY="428.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="67.0" styleClass="keypad" stylesheets="@designcal.css" text="π" />
+                        <Button fx:id="senButton" layoutX="56.0" layoutY="428.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="sen" />
+                        <Button fx:id="cosButton" layoutX="136.0" layoutY="428.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="cos" />
+                        <Button fx:id="tanButton" layoutX="216.0" layoutY="428.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="80.0" styleClass="keypad" stylesheets="@designcal.css" text="tan" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

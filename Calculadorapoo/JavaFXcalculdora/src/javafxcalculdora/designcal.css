@@ -1,0 +1,61 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 13 de dez. de 2022, 19:36:04
+    Author     : filhota
+*/
+
+#tabpane{
+    
+    -fx-background-color: transparent;
+}
+#Pane{
+    
+     -fx-background-color: linear-gradient(to bottom right, #87cefa, f0f8ff, #87cefa);
+}     
+.keyresult{
+    
+   -fx-background-color: #4682b4;
+   -fx-background-radius:20px;
+   -fx-text-fill: #fff;
+   -fx-font-size:20px;
+   -fx-padding: 20px 15px 5px 15px;
+}
+    
+
+.keypad{
+    
+    -fx-background-color: steelblue;
+    -fx-background-radius: 0px;
+    -fx-font-size: 20px;
+    -fx-text-fill: #fff;
+    -fx-cursor: hand;
+    -fx-border-color: #000000;
+}
+
+.tab{
+    -fx-background-color: #9370db;
+    -fx-background-radius: 0.0;
+    -fx-background-insets: 0.0;
+    -fx-text-fill: #fff;
+    -fx-font-size: 20px;
+    
+}
+.tab.tab-label{
+    -fx-background-color: transparent;
+    
+}
+#acButton{
+    -fx-background-color:mediumpurple;
+    -fx-font-size: 20px;
+    -fx-text-fill: #fff;
+    -fx-border-color: #000000;
+}
+#igualButton{
+    -fx-background-color:mediumpurple;
+    -fx-font-size: 20px;
+    -fx-text-fill: #fff;
+    -fx-border-color: #000000;
+}
